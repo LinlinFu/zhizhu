@@ -19,7 +19,7 @@ var ZZUserLocation = CLLocationCoordinate2D()
 var ZZUserAddress: String = ""
 
 
-
+// 测试版本控制 //
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
