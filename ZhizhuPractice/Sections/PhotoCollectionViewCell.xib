@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="ZhizhuPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_photo" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-7K-lDT">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="127"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_photo" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-wm-SIf">
+                        <rect key="frame" x="125" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GGT-eO-4Y9"/>
+                            <constraint firstAttribute="width" secondItem="qaA-wm-SIf" secondAttribute="height" id="q3i-2P-cqI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bUe-7K-lDT" secondAttribute="bottom" id="CgF-r0-knA"/>
+                <constraint firstItem="bUe-7K-lDT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="O3P-tv-uIA"/>
+                <constraint firstAttribute="trailing" secondItem="qaA-wm-SIf" secondAttribute="trailing" id="OvK-Do-O04"/>
+                <constraint firstItem="qaA-wm-SIf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qw6-TI-Rpr"/>
+                <constraint firstItem="bUe-7K-lDT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ukf-rJ-Wqm"/>
+                <constraint firstAttribute="trailing" secondItem="bUe-7K-lDT" secondAttribute="trailing" id="xhR-7E-Why"/>
+            </constraints>
+            <size key="customSize" width="145" height="127"/>
+            <connections>
+                <outlet property="deleteIcon" destination="qaA-wm-SIf" id="yS7-nk-Fq6"/>
+                <outlet property="mainImage" destination="bUe-7K-lDT" id="M6A-Ni-cJj"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="84.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="add_photo" width="107" height="106"/>
+        <image name="delete_photo" width="32" height="32"/>
+    </resources>
+</document>

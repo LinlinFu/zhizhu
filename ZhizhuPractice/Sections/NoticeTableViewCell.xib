@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="NoticeTableViewCell" customModule="ZhizhuPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remind_cell" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-ch-Myk">
+                        <rect key="frame" x="15" y="11" width="40" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fEc-ch-Myk" secondAttribute="height" id="8l7-nz-zGJ"/>
+                            <constraint firstAttribute="width" constant="40" id="IhZ-mG-4El"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-7C-0OF">
+                        <rect key="frame" x="65" y="11" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的实习计划登记通过审核" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-P1-9UP">
+                        <rect key="frame" x="65" y="35.5" width="171.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-05-16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsa-cs-gKl">
+                        <rect key="frame" x="228.5" y="11" width="76.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bir-P1-9UP" firstAttribute="leading" secondItem="aeS-7C-0OF" secondAttribute="leading" id="6lm-h3-OLd"/>
+                    <constraint firstAttribute="trailing" secondItem="Jsa-cs-gKl" secondAttribute="trailing" constant="15" id="J8L-j0-ONR"/>
+                    <constraint firstItem="aeS-7C-0OF" firstAttribute="leading" secondItem="fEc-ch-Myk" secondAttribute="trailing" constant="10" id="MLQ-4L-6PK"/>
+                    <constraint firstItem="fEc-ch-Myk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VAy-pL-aPp"/>
+                    <constraint firstItem="aeS-7C-0OF" firstAttribute="top" secondItem="fEc-ch-Myk" secondAttribute="top" id="aqT-lE-HCa"/>
+                    <constraint firstItem="fEc-ch-Myk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gtx-cU-m03"/>
+                    <constraint firstItem="Bir-P1-9UP" firstAttribute="top" secondItem="aeS-7C-0OF" secondAttribute="bottom" constant="5" id="tm4-Sr-8Bz"/>
+                    <constraint firstItem="Jsa-cs-gKl" firstAttribute="top" secondItem="aeS-7C-0OF" secondAttribute="top" id="tvL-lY-LTj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noticeDetail" destination="Bir-P1-9UP" id="WyS-MK-rw5"/>
+                <outlet property="noticeImage" destination="fEc-ch-Myk" id="2Ob-VN-Q4L"/>
+                <outlet property="noticeTime" destination="Jsa-cs-gKl" id="UmD-fQ-wqm"/>
+                <outlet property="noticeType" destination="aeS-7C-0OF" id="BNi-RH-7vd"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="remind_cell" width="64" height="64"/>
+    </resources>
+</document>
