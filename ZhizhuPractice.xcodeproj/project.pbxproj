@@ -169,6 +169,18 @@
 		21A8A3A71EE8025600F56525 /* PracticeSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8A3A61EE8025600F56525 /* PracticeSummaryViewController.swift */; };
 		21A8A3AD1EE805F300F56525 /* PracticeSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A8A3AC1EE805F300F56525 /* PracticeSummaryModel.swift */; };
 		21C4EEE01EE6AC6100D7A24B /* AttendanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C4EEDF1EE6AC6100D7A24B /* AttendanceModel.swift */; };
+		21D46A0A1EFB747300D3D291 /* TaskApplyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A091EFB747300D3D291 /* TaskApplyListModel.swift */; };
+		21D46A0D1EFB936000D3D291 /* TaskApplyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A0B1EFB936000D3D291 /* TaskApplyListCell.swift */; };
+		21D46A0E1EFB936000D3D291 /* TaskApplyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D46A0C1EFB936000D3D291 /* TaskApplyListCell.xib */; };
+		21D46A101EFB9D3A00D3D291 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A0F1EFB9D3A00D3D291 /* TaskDetailViewController.swift */; };
+		21D46A121EFB9ECF00D3D291 /* TaskSubApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A111EFB9ECF00D3D291 /* TaskSubApplyViewController.swift */; };
+		21D46A141EFB9EED00D3D291 /* TaskSubDescriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A131EFB9EED00D3D291 /* TaskSubDescriptViewController.swift */; };
+		21D46A161EFB9F0000D3D291 /* TaskSubFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A151EFB9F0000D3D291 /* TaskSubFileViewController.swift */; };
+		21D46A181EFB9F1900D3D291 /* TaskSubImplementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A171EFB9F1900D3D291 /* TaskSubImplementViewController.swift */; };
+		21D46A1A1EFBA5E900D3D291 /* TaskDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A191EFBA5E900D3D291 /* TaskDetailModel.swift */; };
+		21D46A1C1EFBB15200D3D291 /* TeacherMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A1B1EFBB15200D3D291 /* TeacherMarkViewController.swift */; };
+		21D46A1E1EFBB16000D3D291 /* AuditRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A1D1EFBB16000D3D291 /* AuditRecordViewController.swift */; };
+		21D46A201EFBBA4D00D3D291 /* TaskImplementDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D46A1F1EFBBA4D00D3D291 /* TaskImplementDetailModel.swift */; };
 		21F5F9DC1ECA98220091EE65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F5F9DA1ECA98220091EE65 /* Main.storyboard */; };
 		21F5F9DE1ECA98220091EE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F5F9DD1ECA98220091EE65 /* Assets.xcassets */; };
 		21F5F9E11ECA98220091EE65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F5F9DF1ECA98220091EE65 /* LaunchScreen.storyboard */; };
@@ -395,6 +407,18 @@
 		21A8A3A61EE8025600F56525 /* PracticeSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeSummaryViewController.swift; sourceTree = "<group>"; };
 		21A8A3AC1EE805F300F56525 /* PracticeSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeSummaryModel.swift; sourceTree = "<group>"; };
 		21C4EEDF1EE6AC6100D7A24B /* AttendanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceModel.swift; sourceTree = "<group>"; };
+		21D46A091EFB747300D3D291 /* TaskApplyListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskApplyListModel.swift; sourceTree = "<group>"; };
+		21D46A0B1EFB936000D3D291 /* TaskApplyListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskApplyListCell.swift; sourceTree = "<group>"; };
+		21D46A0C1EFB936000D3D291 /* TaskApplyListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskApplyListCell.xib; sourceTree = "<group>"; };
+		21D46A0F1EFB9D3A00D3D291 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		21D46A111EFB9ECF00D3D291 /* TaskSubApplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSubApplyViewController.swift; sourceTree = "<group>"; };
+		21D46A131EFB9EED00D3D291 /* TaskSubDescriptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSubDescriptViewController.swift; sourceTree = "<group>"; };
+		21D46A151EFB9F0000D3D291 /* TaskSubFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSubFileViewController.swift; sourceTree = "<group>"; };
+		21D46A171EFB9F1900D3D291 /* TaskSubImplementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSubImplementViewController.swift; sourceTree = "<group>"; };
+		21D46A191EFBA5E900D3D291 /* TaskDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailModel.swift; sourceTree = "<group>"; };
+		21D46A1B1EFBB15200D3D291 /* TeacherMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherMarkViewController.swift; sourceTree = "<group>"; };
+		21D46A1D1EFBB16000D3D291 /* AuditRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditRecordViewController.swift; sourceTree = "<group>"; };
+		21D46A1F1EFBBA4D00D3D291 /* TaskImplementDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskImplementDetailModel.swift; sourceTree = "<group>"; };
 		21F5F9D31ECA98210091EE65 /* ZhizhuPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhizhuPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F5F9DB1ECA98220091EE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F5F9DD1ECA98220091EE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -548,6 +572,13 @@
 				2155D7FF1ED58099002EF588 /* TaskViewController.swift */,
 				2155D8071ED58380002EF588 /* TaskImplementViewController.swift */,
 				2155D8051ED58324002EF588 /* TaskApplyViewController.swift */,
+				21D46A0F1EFB9D3A00D3D291 /* TaskDetailViewController.swift */,
+				21D46A111EFB9ECF00D3D291 /* TaskSubApplyViewController.swift */,
+				21D46A131EFB9EED00D3D291 /* TaskSubDescriptViewController.swift */,
+				21D46A151EFB9F0000D3D291 /* TaskSubFileViewController.swift */,
+				21D46A171EFB9F1900D3D291 /* TaskSubImplementViewController.swift */,
+				21D46A1B1EFBB15200D3D291 /* TeacherMarkViewController.swift */,
+				21D46A1D1EFBB16000D3D291 /* AuditRecordViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -555,6 +586,8 @@
 		2155D8031ED582F1002EF588 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21D46A0B1EFB936000D3D291 /* TaskApplyListCell.swift */,
+				21D46A0C1EFB936000D3D291 /* TaskApplyListCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -564,6 +597,9 @@
 			children = (
 				215A21961EE14E2C006B8DF8 /* AllPracticeStatusModel.swift */,
 				215A21981EE15639006B8DF8 /* AllExercitationTimesModel.swift */,
+				21D46A091EFB747300D3D291 /* TaskApplyListModel.swift */,
+				21D46A191EFBA5E900D3D291 /* TaskDetailModel.swift */,
+				21D46A1F1EFBBA4D00D3D291 /* TaskImplementDetailModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1360,6 +1396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D46A0E1EFB936000D3D291 /* TaskApplyListCell.xib in Resources */,
 				21723F6A1ED6809300E6605A /* ContentTableViewCell.xib in Resources */,
 				21F5F9F51ECAA6560091EE65 /* Info.plist in Resources */,
 				21F5F9E11ECA98220091EE65 /* LaunchScreen.storyboard in Resources */,
@@ -1477,6 +1514,7 @@
 				2155D81A1ED58633002EF588 /* WMMenuView.m in Sources */,
 				21A1D1071ECD9D55005D0F93 /* SignDetailViewController.swift in Sources */,
 				21723F7D1ED6DAD300E6605A /* LogAddTableViewCell.swift in Sources */,
+				21D46A0A1EFB747300D3D291 /* TaskApplyListModel.swift in Sources */,
 				218F23621ED2DB0000D6F859 /* PrepareDetailViewController.swift in Sources */,
 				213623541ECBECAD00E943E4 /* LoginInfoModel.swift in Sources */,
 				215A219C1EE167EC006B8DF8 /* ZZRefreshHeader.swift in Sources */,
@@ -1487,8 +1525,10 @@
 				21742B7B1EEA2B280040272B /* UploadFilesViewController.swift in Sources */,
 				21F5FA301ECAC9650091EE65 /* MJRefreshBackGifFooter.m in Sources */,
 				215A213A1EDEC58F006B8DF8 /* FSCalendarCalculator.m in Sources */,
+				21D46A101EFB9D3A00D3D291 /* TaskDetailViewController.swift in Sources */,
 				21742B801EEA70810040272B /* FileSingleTableViewCell.swift in Sources */,
 				215A21571EDEC646006B8DF8 /* FSCalendarExtensions.m in Sources */,
+				21D46A1E1EFBB16000D3D291 /* AuditRecordViewController.swift in Sources */,
 				215A21521EDEC646006B8DF8 /* FSCalendar.m in Sources */,
 				21A8A3A51EE8022A00F56525 /* MidPeriodViewController.swift in Sources */,
 				2100A3321ED40DD100217399 /* ZGLVideoPlyer.m in Sources */,
@@ -1498,6 +1538,8 @@
 				2157B4B31EF22D320056D6D7 /* SiteStatusProfile.swift in Sources */,
 				213623581ECC023300E943E4 /* BaseTabBarViewController.swift in Sources */,
 				21A8A3AD1EE805F300F56525 /* PracticeSummaryModel.swift in Sources */,
+				21D46A201EFBBA4D00D3D291 /* TaskImplementDetailModel.swift in Sources */,
+				21D46A121EFB9ECF00D3D291 /* TaskSubApplyViewController.swift in Sources */,
 				21F5FA291ECAC9650091EE65 /* MJRefreshBackFooter.m in Sources */,
 				21F5FA381ECAC9650091EE65 /* NSBundle+MJRefresh.m in Sources */,
 				215A21991EE1563A006B8DF8 /* AllExercitationTimesModel.swift in Sources */,
@@ -1550,6 +1592,7 @@
 				2156C7801EE57DF400DF61BF /* NoticeDetailViewController.swift in Sources */,
 				2174CAB81EF38DD200C81DD3 /* TestFeedbackViewController.swift in Sources */,
 				215A21531EDEC646006B8DF8 /* FSCalendar+Deprecated.m in Sources */,
+				21D46A1A1EFBA5E900D3D291 /* TaskDetailModel.swift in Sources */,
 				21F5FA371ECAC9650091EE65 /* MJRefreshConst.m in Sources */,
 				21723F691ED6809300E6605A /* ContentTableViewCell.swift in Sources */,
 				2155D7FB1ED51424002EF588 /* SureCodeViewController.swift in Sources */,
@@ -1560,11 +1603,13 @@
 				2154B7771EF8BC1D00991011 /* YHAlertView.swift in Sources */,
 				21723F841ED7DBC800E6605A /* AccountSaftyViewController.swift in Sources */,
 				21F5FA321ECAC9650091EE65 /* MJRefreshBackStateFooter.m in Sources */,
+				21D46A0D1EFB936000D3D291 /* TaskApplyListCell.swift in Sources */,
 				21742B7D1EEA4DFD0040272B /* BaseTextTableViewCell.swift in Sources */,
 				2136235F1ECC1C1900E943E4 /* PrepareViewController.swift in Sources */,
 				21723F621ED67A0F00E6605A /* PraticeReportViewController.swift in Sources */,
 				21F5F9F41ECAA6560091EE65 /* AppDelegate.swift in Sources */,
 				215A219E1EE16884006B8DF8 /* ZZRefreshFooter.swift in Sources */,
+				21D46A161EFB9F0000D3D291 /* TaskSubFileViewController.swift in Sources */,
 				21742B851EEA813A0040272B /* RemiandHeaderView.swift in Sources */,
 				2155D8191ED58633002EF588 /* WMMenuItem.m in Sources */,
 				215A21971EE14E2C006B8DF8 /* AllPracticeStatusModel.swift in Sources */,
@@ -1574,8 +1619,10 @@
 				21F5FA5B1ECAEAB70091EE65 /* BaseNavigationController.swift in Sources */,
 				2155D8081ED58380002EF588 /* TaskImplementViewController.swift in Sources */,
 				21F5FA411ECAD49D0091EE65 /* UIColor+Extension.swift in Sources */,
+				21D46A1C1EFBB15200D3D291 /* TeacherMarkViewController.swift in Sources */,
 				21F5FA351ECAC9650091EE65 /* MJRefreshStateHeader.m in Sources */,
 				21F5FA341ECAC9650091EE65 /* MJRefreshNormalHeader.m in Sources */,
+				21D46A141EFB9EED00D3D291 /* TaskSubDescriptViewController.swift in Sources */,
 				2156C7681EE4FE1500DF61BF /* CheckSummaryViewController.swift in Sources */,
 				21F5FA491ECAE4740091EE65 /* BaseViewController.swift in Sources */,
 				215A21541EDEC646006B8DF8 /* FSCalendarAppearance.m in Sources */,
@@ -1596,6 +1643,7 @@
 				218985631ECD8A1900446FB3 /* ReportTableViewCell.swift in Sources */,
 				215EF4751ECEFA1F00DF5A0A /* AlbumManager.swift in Sources */,
 				21723F891ED9238600E6605A /* ReportServer.swift in Sources */,
+				21D46A181EFB9F1900D3D291 /* TaskSubImplementViewController.swift in Sources */,
 				218985571ECD6B6300446FB3 /* SettingViewController.swift in Sources */,
 				2155D8231ED58FA7002EF588 /* LogViewController.swift in Sources */,
 				2156C7661EE4F99900DF61BF /* PlanTimeModel.swift in Sources */,

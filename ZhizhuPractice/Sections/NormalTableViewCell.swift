@@ -67,6 +67,8 @@ class NormalTableViewCell: UITableViewCell {
         switch model.status {
         case 0:
             statusName = "进行中"
+        case 1:
+            statusName = "已结束"
         default:
             statusName = "状态未确定"
         }

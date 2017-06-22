@@ -97,7 +97,7 @@ class PrepareViewController: BaseViewController {
     func setupUI() {
         
         backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: ZZScreenWidth, height: ZZScreenHeight - 64 - 49))
-        backgroundImage.image = UIImage(named: "prepare_bg")
+//        backgroundImage.image = UIImage(named: "prepare_bg")
         view.addSubview(backgroundImage)
         
         oneView = PrepareLevelView(frame: CGRect(x: 2 * xMargin - viewHeight / 2.0, y: yMargin - viewHeight / 2.0, width: 115.0, height: viewHeight), btuName: "ic_main_report_normal", titleName: "上传附件", direction: .Right, tag: 6)

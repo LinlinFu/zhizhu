@@ -14,11 +14,15 @@ class TaskApplyViewController: BaseViewController {
     var isCurrentPlan = true
     var planId = ""
     var alertView: ZZAlertView!
+    var tableView: UITableView!
+    var dataSourceArray: [TaskApplyListModel] = []
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = ZZWhiteBackground
-        buildNoneLogUI()
+        fetchData()
     }
     
     func buildNoneLogUI() {
@@ -26,12 +30,59 @@ class TaskApplyViewController: BaseViewController {
         view.addSubview(alertView)
     }
     
+    func buildTableView() {
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: ZZScreenWidth, height: ZZScreenHeight - 64), style: .plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 60
+        tableView.separatorStyle = .none
+        tableView.register(UINib(nibName: "TaskApplyListCell", bundle: nil), forCellReuseIdentifier: "TaskApplyListCell")
+        tableView.backgroundColor = ZZWhiteBackground
+        view.addSubview(tableView)
+        
+
+    }
+
+    
+    //AMRK: 获取任务列表
     func fetchData() {
-        if isCurrentPlan {
-            planId = AppKeys.getPlanId()
+        let param: [String: AnyObject] = ["planId": planId as AnyObject]
+        ServerProvider<ReportServer>().requestReturnDictionary(target: .getMissionDeclareList(param: param)) { (success, info) in
+            
+            guard let info = info else {
+                let vc = RemindViewController(title: "网络异常", type: RemindType.failure)
+                self.present(vc, animated: true, completion: nil)
+                return
+            }
+            let status = JSON(info)["status"].intValue
+            if success && status == 200 {
+                
+                for model in JSON(info)["resultObject"].arrayValue {
+                    let data = TaskApplyListModel(json: model)
+                    self.dataSourceArray.append(data)
+                }
+                if self.dataSourceArray.count == 0 {
+                    if self.alertView == nil {
+                        self.buildNoneLogUI()
+                    }
+                } else {
+                    if self.tableView == nil {
+                        self.buildTableView()
+                    }
+                    self.tableView.reloadData()
+                }
+
+                
+                
+            } else {
+                let vc = RemindViewController(title: JSON(info)["errorMessage"].stringValue, type: RemindType.failure)
+                self.present(vc, animated: true, completion: nil)
+                return
+            }
         }
         
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,3 +93,38 @@ class TaskApplyViewController: BaseViewController {
 
 
 }
+
+extension TaskApplyViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSourceArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskApplyListCell") as! TaskApplyListCell
+        cell.updateApplyData(model: dataSourceArray[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = TaskDetailViewController()
+        vc.type = .Apply
+        vc.missionDeclareId = dataSourceArray[indexPath.row].id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
+}
+
+

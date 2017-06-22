@@ -12,13 +12,13 @@ import Alamofire
 
 enum ReportServer {
     // 查询学生的实习任务(任务实施/任务申报）status:1(查询任务实施,已经审核通过的记录) 查询任务申报 不需要  plantId 实习计划Id
-    case getMissionDeclareList(status: Int, planId: String)
+    case getMissionDeclareList(param: [String: AnyObject])
     // 查询学生任务申报详情 missionDeclareId任务申报Id
     case getMissionDeclareDetails(missionDeclareId: String)
     // 查询学生任务审核记录 missionDeclareId任务申报Id
     case getAuditRecordList(missionDeclareId: String)
     // 查询学生任务实施情况(或者任务实施教师点评) refTable:'MISSION_IMPLEMENT_COLLECTION'(收集资料、对照学习) MISSION_IMPLEMENT_STUDY( 跟踪模仿、学习理解) 'MISSION_IMPLEMENT_IMPL'(任务实施)
-    case getMissionImplement(missionDeclareId: String, refTable: String)
+    case getMissionImplement(param: [String: AnyObject])
     // 查询中期汇报/实习总结 type类型（1.中期汇报 2.实习总结)
     case getSummaryByPlanIdAndType(type: Int, planId: String)
     // 查询考核成绩
@@ -124,16 +124,16 @@ extension ReportServer:TargetType {
     
     var parameters: [String : AnyObject]? {
         switch self {
-        case .getMissionDeclareList(let status, let planId):
-            return ["status": status as AnyObject, "planId": planId as AnyObject]
+        case .getMissionDeclareList(let param):
+            return param
         case .getExercitationByUserId(let userId):
             return ["userId": userId as AnyObject]
         case .getMissionDeclareDetails(let missionDeclareId):
             return ["missionDeclareId": missionDeclareId as AnyObject]
         case .getAuditRecordList(let missionDeclareId):
             return ["missionDeclareId": missionDeclareId as AnyObject]
-        case .getMissionImplement(let missionDeclareId, let refTable):
-            return ["missionDeclareId": missionDeclareId as AnyObject, "refTable": refTable as AnyObject]
+        case .getMissionImplement(let param):
+            return param
         case .getSummaryByPlanIdAndType(let type, let planId):
             return ["type": type as AnyObject, "planId": planId as AnyObject]
         case .getExamingScores(let planId):

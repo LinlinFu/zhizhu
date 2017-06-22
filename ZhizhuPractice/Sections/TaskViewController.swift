@@ -10,7 +10,7 @@ import UIKit
 
 class TaskViewController: WMPageController {
 
-    let controllerArray = [TaskApplyViewController(), TaskImplementViewController()]
+ 
     let titleArray = ["任务申请", "任务实施"]
     // 是否是当前计划
     var isCurrentPlan = true
@@ -19,8 +19,12 @@ class TaskViewController: WMPageController {
     override func viewDidLoad() {
         
         self.title = "实习任务"
+        if isCurrentPlan {
+            planId = AppKeys.getPlanId()
+        }
         setupUI()
         super.viewDidLoad()
+        
         
     }
 
@@ -49,7 +53,14 @@ class TaskViewController: WMPageController {
     }
     //设置对应的viewcontroller
     override func pageController(_ pageController: WMPageController!, viewControllerAt index: Int) -> UIViewController! {
-        return controllerArray[index]
+        if index == 0 {
+             let applyVC = TaskApplyViewController()
+            applyVC.planId = planId
+            return applyVC
+        }
+        let implement = TaskImplementViewController()
+        implement.planId = planId
+        return implement
     }
     //设置每个viewcontroller的标题
     override func pageController(_ pageController: WMPageController!, titleAt index: Int) -> String! {
